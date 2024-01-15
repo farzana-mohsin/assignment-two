@@ -30,6 +30,7 @@ nav .travels {
 }
 nav > ul {
   display: flex;
+  /* padding-left: 20px; */
 }
 nav li {
   list-style: none;
@@ -45,6 +46,108 @@ nav li a {
 nav .home {
   color: #ff5400;
   text-align: center;
-
   font-weight: 700;
+}
+/* #hamnav label,
+#hamburger {
+  display: none;
+}
+#hamitems {
+  display: flex;
+}
+#hamitems li a {
+  text-decoration: none;
+  color: #424247;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+#hamitems a:hover {
+  background: pink;
+} */
+/* banner related styles */
+.banner {
+  max-width: 77%;
+  margin: 0 auto;
+  background-image: linear-gradient(
+      180deg,
+      rgba(19, 19, 24, 0.8) 0%,
+      rgba(19, 19, 24, 0) 100%
+    ),
+    url("../images/Group\ 13\ \(1\)\ \(1\).png");
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  background-size: cover;
+  padding: 100px 0;
+  gap: 24px;
+}
+.banner h1 {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+.banner p {
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+.banner input {
+  width: 174px;
+  height: 52px;
+  border-radius: 8px;
+  background: #fff;
+}
+.btn-primary {
+  width: 174px;
+  height: 52px;
+  border-radius: 8px;
+  background: #ff5400;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+}
+/* .banner input,
+.btn-primary {
+  box-shadow: 0 0 30px 15px rgba(255, 255, 255, 0.3);
+  box-shadow: 3pc;
+  border-radius: 8px;
+} */
+.form {
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  display: inline-flex;
+  padding: 16px;
+  align-items: flex-start;
+  gap: 24px;
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+  nav,
+  nav > ul {
+    flex-direction: column;
+  }
+  nav {
+    margin: 20px;
+  }
+  #hamitems {
+    display: block;
+  }
+  #hamitems a {
+    display: block;
+    width: 100%;
+  }
+  .banner {
+  }
+  .form {
+    flex-direction: column;
+    margin: 20px;
+    align-items: center;
+  }
 }
