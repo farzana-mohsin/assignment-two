@@ -8,7 +8,7 @@
 }
 /* Header related styles */
 nav {
-  width: 80%;
+  width: 78%;
   margin: 50px auto;
   display: flex;
   justify-content: space-between;
@@ -18,6 +18,7 @@ nav h3 {
   color: #131318;
   font-size: 2rem;
   font-weight: 800;
+  display: contents;
 }
 nav .travels {
   color: #ff5400;
@@ -53,7 +54,7 @@ nav .home {
 }
 /* banner related styles */
 .banner {
-  max-width: 80%;
+  max-width: 78%;
   margin: 0 auto;
   background-image: linear-gradient(
       180deg,
@@ -116,7 +117,7 @@ nav .home {
 }
 /* popular related styles */
 .popular-container {
-  width: 80%;
+  width: 78%;
   margin: 120px auto;
   display: flex;
   justify-content: space-between;
@@ -159,7 +160,7 @@ nav .home {
   margin: 10px auto;
 }
 .destination {
-  width: 80%;
+  width: 78%;
   margin: 50px auto;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -224,9 +225,71 @@ nav .home {
   grid-row: 3 / span 1;
   background-image: url("../images/Rectangle\ 10.png");
 }
+/* map related styles */
+.map {
+  max-width: 78%;
+  margin: 150px auto;
+}
+.map-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.map-text {
+  margin: 0 auto;
+  max-width: 800px;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+.transform {
+  /* margin-left: 100px; */
+}
+.container-transform,
+.inner {
+  /* margin-left: 100px; */
+  width: 600px;
+  height: 450px;
+}
+.container-transform {
+  /* border: 2px solid steelblue; */
+  /* background-color: aquamarine; */
+}
+.inner:hover {
+  border: 2px solid black;
+  background-color: bisque;
+  /* transform: scale(0.5); */
+  /* transform: rotate(-25deg); */
+  transform: scale(1) rotate(360deg) translateY(200px);
+  transition: ease-out 5s;
+  /* transform: skew(45deg); */
+}
+.inner-1 {
+  background-image: url("../images/travel-world-landmarks-background-blue-sky-46083021.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: contain;
+  margin-top: 30px;
+  /* width: 600px;
+  height: 450px; */
+}
+/* .inner-2 {
+  background-image: url("../images/588661nitsa.jpg");
+  background-repeat: no-repeat;
+  background-position: center; */
+/* object-fit: contain; */
+
+.map-text p {
+  color: #5a5a5d;
+  text-align: center;
+  font-weight: 400;
+  line-height: 26px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 /* choose related styles */
 .choose {
-  width: 80%;
+  width: 78%;
   margin: 120px auto;
 }
 .choose-text {
@@ -244,7 +307,7 @@ nav .home {
   background: rgba(251, 181, 99, 0.05);
 } */
 .choose-list {
-  margin: 120px auto;
+  /* margin: 120px auto; */
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -252,7 +315,7 @@ nav .home {
 }
 .choose-list-child {
   margin-bottom: 30px;
-  width: 700px;
+  max-width: 650px;
   min-height: 300px;
   padding: 30px;
 }
@@ -286,7 +349,7 @@ h3 {
 }
 /* newletter related styles */
 .newsletter {
-  width: 80%;
+  width: 78%;
   margin: 120px auto;
   display: flex;
   justify-content: space-around;
@@ -382,6 +445,9 @@ footer {
 footer p {
   margin-top: 40px;
 }
+.footer-title h3 {
+  display: contents;
+}
 @media screen and (max-width: 600px) {
   .menu-items {
     display: none;
@@ -440,6 +506,13 @@ footer p {
   .country-seven {
     grid-column: 1 / span 1;
     grid-row: 7 / span 1;
+  }
+  .map-flex {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .map-link {
+    max-width: 80%;
   }
   .choose-list {
     grid-template-columns: repeat(1, 1fr);
