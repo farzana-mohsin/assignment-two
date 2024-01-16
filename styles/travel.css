@@ -329,17 +329,20 @@ h3 {
 .newsletter-text p {
   margin-bottom: 40px;
 }
+.newsletter-image {
+  position: relative;
+}
 .travel-badge {
   background: #ff5400;
   max-width: 320px;
   border-radius: 16px;
   padding: 5px;
   text-align: center;
-  position: relative;
-  bottom: 180px;
+  position: absolute;
+  bottom: 90px;
   left: 350px;
   transform: rotate(-20deg);
-  translate: rotate(45deg);
+  /* translate: rotate(45deg); */
 }
 .travel-badge p {
   color: #fff;
@@ -356,6 +359,28 @@ h3 {
   font-weight: 800;
   margin-top: 0;
   margin-bottom: 15px;
+}
+footer {
+  background: rgba(19, 19, 24, 0.05);
+  width: 100%;
+  height: 300px;
+  margin: 120px auto 0 auto;
+  padding: 100px 0 300px 0;
+  text-align: center;
+  align-items: center;
+}
+.footer-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.footer-icon > .fa-brands {
+  margin: 30px;
+}
+footer p {
+  margin-top: 40px;
 }
 @media screen and (max-width: 600px) {
   .menu-items {
@@ -448,6 +473,12 @@ h3 {
   }
   .newsletter-img img {
     max-width: 70%;
-    /* object-fit: contain; */
+    object-fit: contain;
+  }
+  footer {
+    /* text-wrap: wrap; */
+    margin: 20px 10px 0px 20px;
+    padding: 10px;
+    align-items: center;
   }
 }
