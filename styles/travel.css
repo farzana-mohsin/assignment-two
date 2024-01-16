@@ -151,7 +151,8 @@ nav .home {
   font-weight: 800;
 }
 .destination-container-p,
-.choose-text p {
+.choose-text p,
+.newsletter-text p {
   color: rgba(19, 19, 24, 0.7);
   font-weight: 400;
   max-width: 700px;
@@ -223,6 +224,7 @@ nav .home {
   grid-row: 3 / span 1;
   background-image: url("../images/Rectangle\ 10.png");
 }
+/* choose related styles */
 .choose {
   width: 80%;
   margin: 120px auto;
@@ -281,6 +283,79 @@ h3 {
 }
 .choose-list-child > p {
   line-height: 26px;
+}
+/* newletter related styles */
+.newsletter {
+  width: 80%;
+  margin: 120px auto;
+  display: flex;
+  justify-content: space-around;
+}
+.newsletter input {
+  display: block;
+  width: 90%;
+  height: 52px;
+  margin-top: 20px;
+}
+.subscribe-button {
+  display: block;
+  border-radius: 8px;
+  background: #ff5400;
+  width: 90%;
+  height: 52px;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-top: 20px;
+}
+.newsletter-text {
+  width: 40%;
+  padding: 50px;
+  border-radius: 16px;
+  border: 1px solid #ff5400;
+}
+.newsletter-img img {
+  max-width: 60%;
+  height: 90%;
+}
+.newsletter-text h3 {
+  color: #131318;
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+.newsletter-text p {
+  margin-bottom: 40px;
+}
+.travel-badge {
+  background: #ff5400;
+  max-width: 320px;
+  border-radius: 16px;
+  padding: 5px;
+  text-align: center;
+  position: relative;
+  bottom: 180px;
+  left: 350px;
+  transform: rotate(-20deg);
+  translate: rotate(45deg);
+}
+.travel-badge p {
+  color: #fff;
+  text-align: center;
+  font-size: 1.3rem;
+  /* font-weight: 400; */
+  margin-bottom: 0;
+  margin-top: 15px;
+}
+.travel-badge h3 {
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-top: 0;
+  margin-bottom: 15px;
 }
 @media screen and (max-width: 600px) {
   .menu-items {
@@ -347,8 +422,8 @@ h3 {
   }
   .choose-list-child {
     width: 100%;
-    margin: 50px;
-    padding: 20px;
+    margin: 0 auto;
+    align-items: center;
   }
   .choose-list-a {
     grid-column: 1 / span 1;
@@ -361,5 +436,18 @@ h3 {
   .choose-list-c {
     grid-column: 1 / span 1;
     grid-row: 3 / span 1;
+  }
+  .newsletter {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .newsletter-text {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .newsletter-img img {
+    max-width: 70%;
+    /* object-fit: contain; */
   }
 }
