@@ -248,8 +248,8 @@ nav .home {
 .container-transform,
 .inner {
   /* margin-left: 100px; */
-  width: 600px;
-  height: 450px;
+  width: 500px;
+  height: 350px;
 }
 .container-transform {
   /* border: 2px solid steelblue; */
@@ -553,5 +553,11 @@ footer p {
     margin: 20px 10px 0px 20px;
     padding: 10px;
     align-items: center;
+  }
+  .container-transform,
+  .inner {
+    /* margin-left: 100px; */
+    width: 300px;
+    height: 250px;
   }
 }
