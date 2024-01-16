@@ -8,7 +8,7 @@ font-family: "Mulish", sans-serif;
 }
 /* Header related styles */
 nav {
-  width: 82%;
+  width: 80%;
   margin: 50px auto;
   display: flex;
   justify-content: space-between;
@@ -48,23 +48,9 @@ nav .home {
   text-align: center;
   font-weight: 700;
 }
-/* #hamnav label,
-#hamburger {
+.hamburger {
   display: none;
 }
-#hamitems {
-  display: flex;
-}
-#hamitems li a {
-  text-decoration: none;
-  color: #424247;
-  text-align: center;
-  font-size: 1.1rem;
-  font-weight: 400;
-}
-#hamitems a:hover {
-  background: pink;
-} */
 /* banner related styles */
 .banner {
   max-width: 80%;
@@ -109,6 +95,7 @@ nav .home {
   color: #fff;
   text-align: center;
   font-weight: 700;
+  font-size: 1.1rem;
 }
 /* .banner input,
 .btn-primary {
@@ -127,34 +114,36 @@ nav .home {
   max-width: 800px;
   margin: 0 auto;
 }
-/* destination related styles */
-/* .destination {
+/* popular related styles */
+.popular-container {
   width: 80%;
-  margin: 0 auto;
+  margin: 120px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
 }
-.destination {
-  position: relative;
-  color: white;
+.popular-text {
+  width: 600px;
 }
-.centered {
-  color: white;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-} */
+.popular-text > ul {
+  color: rgba(19, 19, 24, 0.7);
+  font-weight: 400;
+  line-height: 25px;
+}
+/* destination related styles */
+
 .destination-container {
   margin: 120px auto;
   align-items: center;
   text-align: center;
 }
-.destination-container h3 {
+.destination-container-h3 {
   color: #131318;
   font-size: 2.75rem;
   font-weight: 800;
 }
-.destination-container p {
+.destination-container-p {
   color: rgba(19, 19, 24, 0.7);
   font-weight: 400;
   max-width: 600px;
@@ -167,7 +156,6 @@ nav .home {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 20px;
-  /* border-radius: 16px; */
 }
 .country {
   display: flex;
@@ -228,19 +216,17 @@ nav .home {
   background-image: url("../images/Rectangle\ 10.png");
 }
 @media screen and (max-width: 600px) {
-  nav,
-  nav > ul {
-    flex-direction: column;
+  .menu-items {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+    /* padding-top: 10px;
+    width: 24px;
+    height: 24px; */
   }
   nav {
-    margin: 20px;
-  }
-  #hamitems {
-    display: block;
-  }
-  #hamitems a {
-    display: block;
-    width: 100%;
+    margin: auto;
   }
   .banner h1 {
     font-size: 2rem;
@@ -249,6 +235,12 @@ nav .home {
     flex-direction: column;
     margin: 20px;
     align-items: center;
+  }
+  .popular-container {
+    flex-direction: column;
+  }
+  .popular-text {
+    width: fit-content;
   }
   .destination {
     grid-template-columns: repeat(1, 1fr);
