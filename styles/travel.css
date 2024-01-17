@@ -477,6 +477,11 @@ footer p {
     flex-direction: column;
     margin: 20px;
     align-items: center;
+    background-position: center;
+  }
+  .form > input,
+  button {
+    font-size: 1.3rem;
   }
   .popular-container {
     flex-direction: column;
@@ -521,6 +526,9 @@ footer p {
   .map-flex {
     flex-direction: column;
     margin-bottom: 30px;
+  }
+  .map-flex > iframe {
+    max-width: 400px;
   }
   .map-link {
     max-width: 80%;
