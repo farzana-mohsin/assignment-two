@@ -122,7 +122,7 @@ nav .home {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 50px;
+  gap: 20px;
 }
 .popular-text {
   width: 600px;
@@ -137,6 +137,10 @@ nav .home {
 }
 .popular-text p {
   margin-top: 30px;
+}
+.popular-container > img {
+  width: 100%;
+  max-width: 800px;
 }
 /* destination related styles */
 
@@ -234,6 +238,7 @@ nav .home {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  gap: 20px;
 }
 .map-text {
   margin: 0 auto;
@@ -248,8 +253,8 @@ nav .home {
 .container-transform,
 .inner {
   /* margin-left: 100px; */
-  width: 500px;
-  height: 350px;
+  width: 550px;
+  height: 440px;
 }
 .container-transform {
   /* border: 2px solid steelblue; */
@@ -268,8 +273,7 @@ nav .home {
   background-image: url("../images/travel-world-landmarks-background-blue-sky-46083021.webp");
   background-repeat: no-repeat;
   background-position: center;
-  object-fit: contain;
-  margin-top: 30px;
+  object-fit: cover;
   /* width: 600px;
   height: 450px; */
 }
@@ -295,6 +299,9 @@ nav .home {
 .choose-text {
   align-items: center;
   text-align: center;
+}
+.choose-text > p {
+  margin-bottom: 40px;
 }
 /* .choose-text h3 {
   color: #131318;
@@ -352,7 +359,8 @@ h3 {
   width: 78%;
   margin: 120px auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  gap: 20px;
 }
 .newsletter input {
   display: block;
@@ -379,9 +387,10 @@ h3 {
   border-radius: 16px;
   border: 1px solid #ff5400;
 }
-.newsletter-img img {
-  max-width: 60%;
-  height: 90%;
+.newsletter-image > img {
+  width: 90%;
+  max-width: 800px;
+  height: 600px;
 }
 .newsletter-text h3 {
   color: #131318;
@@ -427,7 +436,7 @@ footer {
   background: rgba(19, 19, 24, 0.05);
   width: 100%;
   height: 300px;
-  margin: 120px auto 0 auto;
+  margin: 120px 0 0 0;
   padding: 100px 0 300px 0;
   text-align: center;
   align-items: center;
@@ -471,9 +480,11 @@ footer p {
   }
   .popular-container {
     flex-direction: column;
+    margin: 20px;
   }
   .popular-text {
     width: fit-content;
+    margin-left: 40px;
   }
   .destination {
     grid-template-columns: repeat(1, 1fr);
@@ -539,18 +550,23 @@ footer p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 20px;
   }
   .newsletter-text {
     width: 100%;
     margin-bottom: 40px;
+    margin-left: 80px;
   }
-  .newsletter-img img {
-    max-width: 70%;
-    object-fit: contain;
+  .newsletter-image > img {
+    width: 500px;
+    height: 350px;
+    margin-left: 15px;
+    padding-left: 70px;
+    /* object-fit: cover; */
   }
   footer {
     /* text-wrap: wrap; */
-    margin: 20px 10px 0px 20px;
+    margin-top: 20px;
     padding: 10px;
     align-items: center;
   }
